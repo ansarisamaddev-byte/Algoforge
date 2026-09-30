@@ -21,11 +21,11 @@ export default function Footer() {
           <span className="text-fg-2">{siteConfig.tagline}</span>
         </div>
 
-        <div className="flex items-center gap-2 px-3 py-1.5 bg-card border border-line" role="status">
+        {/* <div className="flex items-center gap-2 px-3 py-1.5 bg-card border border-line" role="status">
           <span className={`w-2 h-2 rounded-full ${dot} ${status === 'OPERATIONAL' ? 'animate-pulse' : ''}`} />
           <span className="text-fg-2">SYS_STATUS:</span>
           <span className={`${text} font-bold`}>{status}</span>
-        </div>
+        </div> */}
 
         <div className="flex flex-wrap justify-center items-center gap-4">
           {siteConfig.footerLinks.map((l) => (

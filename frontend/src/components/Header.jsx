@@ -32,7 +32,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-base/95 backdrop-blur-sm border-b border-line px-4 lg:px-8 py-3">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2.5 group" aria-label={`${siteConfig.name} home`}>
-          <img src={siteConfig.logo} alt="" width="40" height="40" className="h-5 w-auto" />
+          <img src={siteConfig.logo} alt="" width="28" height="28" className="h-7 w-7 object-contain" />
           <span className="font-sans font-bold tracking-tight text-x text-fg group-hover:text-forge transition-colors">
             {siteConfig.name}
           </span>

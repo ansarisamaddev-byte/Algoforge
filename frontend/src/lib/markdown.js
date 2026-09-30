@@ -18,7 +18,7 @@ export function extractToc(markdown) {
       continue;
     }
     if (inFence) continue;
-    const m = /^##\s+(.+?)\s*#*\s*$/.exec(line);
+    const m = /^#{2,3}\s+(.+?)\s*#*\s*$/.exec(line);
     if (m) {
       const text = m[1].replace(/`/g, '').replace(/\*+/g, '');
       toc.push({ text, id: slugify(text) });
